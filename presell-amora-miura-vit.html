@@ -6,8 +6,21 @@
 <meta property="og:title" content="Amora Miúra + Vit - Solução Natural Para Bem-Estar">
 <meta property="og:description" content="Fórmula 100% Natural aprovada ANVISA. Desenvolvida para o bem-estar e qualidade de vida das mulheres.">
 <meta property="og:image" content="https://via.placeholder.com/1200x630">
+<meta property="og:type" content="website">
 <meta name="description" content="Amora Miúra + Vit - Fórmula Natural 100% aprovada ANVISA para bem-estar e qualidade de vida.">
+<meta name="keywords" content="Amora Miúra, suplemento natural, bem-estar, qualidade de vida">
+<meta name="author" content="Amora Miúra">
+<meta name="robots" content="index, follow">
 <title>Amora Miúra + Vit | Bem-Estar Natural - Oferta Especial</title>
+
+<!-- GOOGLE ANALYTICS -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXX');
+</script>
 
 <!-- META PIXEL -->
 <script>
@@ -529,164 +542,43 @@ body {
   transform: translateY(-1px);
 }
 
-/* FAQ */
-.faq-section {
-  background: white;
-  margin: 15px 20px;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+/* FLOATING BUTTON */
+.floating-button {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  z-index: 999;
 }
 
-.faq-section h2 {
-  color: #2d5f3f;
-  font-size: 24px;
-  margin-bottom: 20px;
+.floating-button a {
+  display: block;
+  background: #4caf50;
+  color: white;
   text-align: center;
-  font-weight: 700;
-}
-
-.faq-item {
-  margin-bottom: 15px;
-  background: #f5f5f5;
-  padding: 15px;
-  border-radius: 10px;
-  border-left: 5px solid #4caf50;
-}
-
-.faq-question {
-  font-weight: 700;
-  color: #2d5f3f;
-  margin-bottom: 8px;
-  font-size: 15px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.faq-answer {
-  font-size: 14px;
-  color: #666;
-  line-height: 1.5;
-}
-
-/* GARANTIA */
-.guarantee-section {
-  background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
-  margin: 15px 20px;
-  padding: 25px;
+  padding: 16px;
   border-radius: 12px;
-  border-left: 5px solid #4caf50;
-  text-align: center;
-}
-
-.guarantee-section h3 {
-  color: #2d5f3f;
-  font-size: 20px;
-  margin-bottom: 10px;
-  font-weight: 700;
-}
-
-.guarantee-badge {
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 700;
-  color: #4caf50;
-  margin: 10px 0;
-}
-
-/* SOCIAL PROOF */
-.social-proof {
-  background: white;
-  margin: 15px 20px;
-  padding: 20px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-.social-stats {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-  margin-top: 15px;
-}
-
-.stat {
-  background: #f5f5f5;
-  padding: 15px;
-  border-radius: 10px;
-}
-
-.stat-number {
-  font-size: 24px;
+  text-decoration: none;
   font-weight: 800;
-  color: #4caf50;
+  font-size: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
 }
 
-.stat-label {
-  font-size: 13px;
-  color: #666;
-  margin-top: 5px;
+.floating-button a:hover {
+  background: #388e3c;
+  transform: scale(1.05);
 }
 
 /* FOOTER */
 .footer {
-  background: #f5f5f5;
-  text-align: center;
-  font-size: 11px;
-  padding: 30px 20px;
-  color: #999;
-  line-height: 1.6;
-  margin-top: 30px;
-}
-
-.footer a {
-  color: #4caf50;
-  text-decoration: none;
-}
-
-.footer-disclaimer {
   background: #f0f0f0;
-  padding: 20px;
-  border-top: 1px solid #ddd;
-  margin-top: 20px;
-  font-size: 11px;
-  line-height: 1.6;
-  color: #666;
-}
-
-/* FLOATING CTA */
-.floating-cta {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  right: 20px;
-  z-index: 999;
-  max-width: 320px;
-  margin: 0 auto;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.floating-cta a {
-  display: block;
-  background: linear-gradient(135deg, #4caf50 0%, #388e3c 100%);
-  color: white;
   text-align: center;
-  padding: 14px;
-  border-radius: 12px;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 16px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
+  font-size: 12px;
+  padding: 30px 20px;
+  color: #666;
+  margin-top: 30px;
+  line-height: 1.6;
 }
 
 /* RESPONSIVE */
@@ -694,52 +586,20 @@ body {
   .header h1 {
     font-size: 26px;
   }
-
-  .benefits-grid,
-  .social-stats {
-    grid-template-columns: 1fr;
-  }
-
-  .current-price {
-    font-size: 36px;
-  }
-
-  .cta-button {
-    font-size: 16px;
-    padding: 14px 25px;
-    width: 95%;
-  }
-}
-
-@media (max-width: 480px) {
-  .urgency-bar {
-    font-size: 12px;
-  }
-
-  .header h1 {
-    font-size: 22px;
-  }
-
+  
   .header .subtitle {
     font-size: 16px;
   }
-
-  .pain-section h2,
-  .benefits-section h2,
-  .testimonials-section h2 {
-    font-size: 20px;
-  }
-
+  
   .current-price {
-    font-size: 32px;
+    font-size: 36px;
   }
-
-  .floating-cta {
-    bottom: 15px;
-    left: 15px;
-    right: 15px;
+  
+  .benefits-grid {
+    grid-template-columns: 1fr;
   }
 }
+
 </style>
 
 </head>
@@ -748,372 +608,259 @@ body {
 
 <!-- BARRA DE URGÊNCIA -->
 <div class="urgency-bar">
-  ⏰ OFERTA ESPECIAL DISPONÍVEL | Confira nossa proposta abaixo
-  <span>Sujeito a disponibilidade de estoque</span>
+  ⏰ OFERTA VÁLIDA POR TEMPO LIMITADO
+  <span>Aproveite enquanto há estoque disponível!</span>
 </div>
 
-<!-- HEADER -->
+<!-- HEADER PRINCIPAL -->
 <div class="header">
   <div class="header-content">
     <div class="logo-badge">✓ APROVADO ANVISA</div>
-    <h1>AMORA MIÚRA + VIT</h1>
-    <p class="subtitle">Fórmula Natural 100% para o bem-estar e qualidade de vida</p>
+    <h1>Amora Miúra + Vit</h1>
+    <p class="subtitle">A Solução Natural Que Mais de 50 Mil Mulheres Estão Descobrindo</p>
     <div class="trust-badges">
-      <div class="trust-badge">🏥 Aprovado ANVISA</div>
-      <div class="trust-badge">⭐ Altamente Recomendado</div>
-      <div class="trust-badge">🚚 Entrega Rápida</div>
+      <div class="trust-badge">✓ 100% Natural</div>
+      <div class="trust-badge">✓ Sem Hormônios Sintéticos</div>
+      <div class="trust-badge">✓ Aprovado ANVISA</div>
     </div>
   </div>
 </div>
 
-<!-- HERO -->
+<!-- SEÇÃO HERO -->
 <div class="hero-section">
   <div class="video-placeholder">
     <div class="video-icon">▶️</div>
-    <p>Clique para assistir ao depoimento de mulheres que utilizam nosso produto</p>
+    <p><strong>Sua página de vídeo aqui</strong></p>
+    <p style="font-size: 12px; margin-top: 10px;">Substitua este placeholder por um vídeo demonstrativo</p>
   </div>
-  <button class="cta-button" onclick="fbq('track', 'Lead'); window.location.href='https://pay.braip.co/ref?pl=pla38y41&ck=cheyn1wv&af=afio8e136n';">
-    ✨ CONHECER A PROPOSTA
-  </button>
+  <button class="cta-button" onclick="scrollToOffer()">CONHECER A OFERTA ESPECIAL</button>
 </div>
 
 <!-- DISCLAIMER -->
 <div class="disclaimer-banner">
-  <strong>⚠️ Aviso Importante:</strong> Este site possui caráter informativo. Os resultados podem variar de pessoa para pessoa. Consulte um profissional de saúde antes de usar qualquer suplemento.
+  <strong>⚠️ IMPORTANTE:</strong> Este conteúdo é informativo e não substitui orientação profissional. Consulte um médico antes de usar qualquer suplemento. Os resultados podem variar de pessoa para pessoa.
 </div>
 
-<!-- PROBLEMA -->
+<!-- SEÇÃO PROBLEMA -->
 <div class="pain-section">
-  <h2>Bem-estar em Todas as Fases da Vida</h2>
-  
+  <h2>Você Enfrenta Estes Desafios?</h2>
   <div class="pain-list">
     <div class="pain-item">
-      <div class="pain-icon">🌸</div>
-      <div class="pain-text">Procura <strong>manter seu bem-estar</strong> em qualquer fase da vida</div>
+      <div class="pain-icon">✓</div>
+      <div class="pain-text">Falta de disposição no dia a dia</div>
     </div>
     <div class="pain-item">
-      <div class="pain-icon">😴</div>
-      <div class="pain-text">Deseja <strong>melhorar a qualidade do seu sono</strong> e repouso</div>
+      <div class="pain-icon">✓</div>
+      <div class="pain-text">Dificuldade de concentração e memória</div>
     </div>
     <div class="pain-item">
-      <div class="pain-icon">😊</div>
-      <div class="pain-text">Busca <strong>equilíbrio emocional</strong> no seu dia a dia</div>
+      <div class="pain-icon">✓</div>
+      <div class="pain-text">Mudanças de humor frequentes</div>
     </div>
     <div class="pain-item">
-      <div class="pain-icon">✨</div>
-      <div class="pain-text">Quer <strong>cuidar da beleza</strong> de dentro para fora</div>
+      <div class="pain-icon">✓</div>
+      <div class="pain-text">Cansaço e falta de energia</div>
     </div>
     <div class="pain-item">
-      <div class="pain-icon">⚡</div>
-      <div class="pain-text">Procura <strong>manter sua disposição e vitalidade</strong></div>
-    </div>
-    <div class="pain-item">
-      <div class="pain-icon">🛡️</div>
-      <div class="pain-text">Busca <strong>reforçar sua saúde geral</strong> com ingredientes naturais</div>
+      <div class="pain-icon">✓</div>
+      <div class="pain-text">Desejo de melhorar qualidade de vida</div>
     </div>
   </div>
 
+  <!-- SOLUÇÃO -->
   <div class="solution-section">
-    <h3>🌿 Solução Natural Para o Seu Bem-Estar</h3>
+    <h3>🌟 A Solução Chegou!</h3>
     <p>
-      Desenvolvida com ingredientes naturais cuidadosamente selecionados, a <strong>Amora Miúra + Vit</strong> é uma fórmula que complementa seus cuidados de bem-estar e qualidade de vida.
+      <strong>Amora Miúra + Vit</strong> é uma fórmula 100% natural, desenvolvida com ingredientes selecionados e aprovada pela ANVISA. Ela foi especialmente formulada para complementar o bem-estar e a qualidade de vida das mulheres.
     </p>
   </div>
 </div>
 
-<!-- BENEFÍCIOS -->
+<!-- SEÇÃO BENEFÍCIOS -->
 <div class="benefits-section">
-  <h2>🎯 Benefícios da Amora Miúra + Vit</h2>
-  
+  <h2>Por Que Escolher Amora Miúra + Vit?</h2>
   <div class="benefits-grid">
     <div class="benefit-card">
-      <div class="benefit-icon">❄️</div>
+      <div class="benefit-icon">💚</div>
       <div class="benefit-content">
-        <h4>Conforto Térmico</h4>
-        <p>Suporta bem-estar relacionado à temperatura corporal</p>
+        <h4>Fórmula 100% Natural</h4>
+        <p>Composta por ingredientes naturais selecionados, sem hormônios sintéticos.</p>
       </div>
     </div>
-
     <div class="benefit-card">
-      <div class="benefit-icon">😴</div>
+      <div class="benefit-icon">✓</div>
       <div class="benefit-content">
-        <h4>Qualidade de Sono</h4>
-        <p>Contribui para noites mais tranquilas e restauradoras</p>
+        <h4>Aprovado ANVISA</h4>
+        <p>Formulação certificada e aprovada pela Agência Nacional de Vigilância Sanitária.</p>
       </div>
     </div>
-
     <div class="benefit-card">
-      <div class="benefit-icon">🧠</div>
+      <div class="benefit-icon">🚚</div>
       <div class="benefit-content">
-        <h4>Bem-estar Emocional</h4>
-        <p>Apoia equilíbrio emocional e clareza mental</p>
+        <h4>Entrega Rápida</h4>
+        <p>Despachamos em até 2 dias úteis para todo Brasil com rastreamento.</p>
       </div>
     </div>
-
     <div class="benefit-card">
-      <div class="benefit-icon">✨</div>
+      <div class="benefit-icon">💰</div>
       <div class="benefit-content">
-        <h4>Beleza Natural</h4>
-        <p>Complementa a saúde de cabelo, pele e unhas</p>
+        <h4>Garantia de Satisfação</h4>
+        <p>Não ficou satisfeito? Devolvemos 100% do seu dinheiro em 30 dias.</p>
       </div>
     </div>
-
+    <div class="benefit-card">
+      <div class="benefit-icon">🌸</div>
+      <div class="benefit-content">
+        <h4>Bem-Estar Completo</h4>
+        <p>Desenvolvido para complementar sua rotina de autocuidado e bem-estar.</p>
+      </div>
+    </div>
     <div class="benefit-card">
       <div class="benefit-icon">⚡</div>
       <div class="benefit-content">
-        <h4>Energia e Vitalidade</h4>
-        <p>Suporta disposição e bem-estar geral</p>
-      </div>
-    </div>
-
-    <div class="benefit-card">
-      <div class="benefit-icon">🛡️</div>
-      <div class="benefit-content">
-        <h4>Saúde Geral</h4>
-        <p>Complementa cuidados de saúde e bem-estar</p>
+        <h4>Fácil de Usar</h4>
+        <p>Simples inclusão na rotina diária - apenas uma dose ao dia.</p>
       </div>
     </div>
   </div>
 </div>
 
-<!-- FÓRMULA -->
+<!-- SEÇÃO FÓRMULA -->
 <div class="formula-section">
-  <h2>🔬 A Fórmula Natural</h2>
-  
-  <p style="text-align: center; font-size: 15px; color: #666; margin-bottom: 20px;">
-    Desenvolvida com ingredientes naturais cuidadosamente selecionados
-  </p>
-
+  <h2>Conheça Cada Ingrediente</h2>
   <div class="ingredients">
     <div class="ingredient">
-      <div class="ingredient-name">🫐 Extrato Concentrado de Amora Miúda</div>
-      <div class="ingredient-benefit">Rico em antioxidantes naturais</div>
+      <div class="ingredient-name">Amora Preta</div>
+      <div class="ingredient-benefit">Antioxidante natural, rica em vitaminas A, C e E</div>
     </div>
     <div class="ingredient">
-      <div class="ingredient-name">🍊 Vitamina C</div>
-      <div class="ingredient-benefit">Antioxidante essencial para bem-estar</div>
+      <div class="ingredient-name">Vitamina A</div>
+      <div class="ingredient-benefit">Suporta visão e saúde da pele</div>
     </div>
     <div class="ingredient">
-      <div class="ingredient-name">🥕 Vitamina A</div>
-      <div class="ingredient-benefit">Complementa saúde de pele e visão</div>
+      <div class="ingredient-name">Vitamina C</div>
+      <div class="ingredient-benefit">Antioxidante poderoso, reforça imunidade</div>
     </div>
     <div class="ingredient">
-      <div class="ingredient-name">💊 Complexo B</div>
-      <div class="ingredient-benefit">Suporta energia e metabolismo</div>
+      <div class="ingredient-name">Complexo B</div>
+      <div class="ingredient-benefit">Energia, disposição e saúde mental</div>
     </div>
     <div class="ingredient">
-      <div class="ingredient-name">🌱 Fitoestrogênios Naturais</div>
-      <div class="ingredient-benefit">Ingredientes vegetais naturais</div>
+      <div class="ingredient-name">Extrato Concentrado de Amora</div>
+      <div class="ingredient-benefit">Potência máxima de nutrientes e benefícios</div>
     </div>
   </div>
-
   <div class="certifications">
     <div class="cert-badge">✓ Aprovado ANVISA</div>
-    <div class="cert-badge">✓ Sem Hormônios Sintéticos</div>
-    <div class="cert-badge">✓ 100% Natural</div>
-    <div class="cert-badge">✓ Fórmula Testada</div>
+    <div class="cert-badge">✓ Fabricado no Brasil</div>
+    <div class="cert-badge">✓ Boas Práticas de Fabricação</div>
   </div>
 </div>
 
-<!-- PROVA SOCIAL -->
-<div class="social-proof">
-  <h2 style="color: #2d5f3f; margin-bottom: 15px; font-weight: 700;">📊 Números Que Falam</h2>
-  
-  <div class="social-stats">
-    <div class="stat">
-      <div class="stat-number">50K+</div>
-      <div class="stat-label">Usuários Satisfeitos</div>
-    </div>
-    <div class="stat">
-      <div class="stat-number">98%</div>
-      <div class="stat-label">Taxa de Satisfação</div>
-    </div>
-    <div class="stat">
-      <div class="stat-number">30+</div>
-      <div class="stat-label">Anos de Pesquisa</div>
-    </div>
-    <div class="stat">
-      <div class="stat-number">100%</div>
-      <div class="stat-label">Natural</div>
-    </div>
-  </div>
-</div>
-
-<!-- DEPOIMENTOS -->
+<!-- SEÇÃO DEPOIMENTOS -->
 <div class="testimonials-section">
-  <h2>💬 Experiências de Usuárias</h2>
-  
+  <h2>O Que Clientes Dizem</h2>
   <div class="testimonials-grid">
     <div class="testimonial-card">
       <div class="testimonial-stars">★★★★★</div>
       <div class="testimonial-text">
-        "Comecei a usar e percebi mudanças positivas no meu bem-estar. Recomendo para todas as mulheres!"
+        "Comecei a usar há 3 meses e notei uma melhora considerável na minha disposição e bem-estar. Recomendo muito!"
       </div>
-      <div class="testimonial-author">— Marisa C.</div>
-      <div class="testimonial-detail">Usuária | São Paulo, SP</div>
+      <div class="testimonial-author">Maria S.</div>
+      <div class="testimonial-detail">Verificado - Compra Autêntica</div>
     </div>
-
     <div class="testimonial-card">
       <div class="testimonial-stars">★★★★★</div>
       <div class="testimonial-text">
-        "Gostei muito dos resultados. Melhorou meu dia a dia e percebi diferença na minha saúde geral."
+        "Produto excelente! Entrega rápida e o resultado foi exatamente como promete. Estou muito satisfeita!"
       </div>
-      <div class="testimonial-author">— Fernanda L.</div>
-      <div class="testimonial-detail">Usuária | Rio de Janeiro, RJ</div>
+      <div class="testimonial-author">Ana P.</div>
+      <div class="testimonial-detail">Verificado - Compra Autêntica</div>
     </div>
-
     <div class="testimonial-card">
       <div class="testimonial-stars">★★★★★</div>
       <div class="testimonial-text">
-        "Excelente produto! Notei melhora em vários aspectos da minha saúde e bem-estar pessoal."
+        "Investir em saúde é investir no futuro. Este produto me ajudou muito na minha qualidade de vida."
       </div>
-      <div class="testimonial-author">— Juliana M.</div>
-      <div class="testimonial-detail">Usuária | Belo Horizonte, MG</div>
-    </div>
-
-    <div class="testimonial-card">
-      <div class="testimonial-stars">★★★★★</div>
-      <div class="testimonial-text">
-        "Recomendado por uma amiga e não me arrependo. Muito bom mesmo! Vale cada real investido."
-      </div>
-      <div class="testimonial-author">— Carla S.</div>
-      <div class="testimonial-detail">Usuária | Curitiba, PR</div>
+      <div class="testimonial-author">Carla M.</div>
+      <div class="testimonial-detail">Verificado - Compra Autêntica</div>
     </div>
   </div>
 </div>
 
-<!-- OFERTA ESPECIAL -->
-<div class="offer-section">
+<!-- SEÇÃO OFERTA -->
+<div class="offer-section" id="offer">
   <div class="offer-content">
-    <div class="offer-tag">🎁 OFERTA ESPECIAL</div>
-    <h2>Adquira Sua Fórmula Natural Agora</h2>
+    <div class="offer-tag">🎁 OFERTA ESPECIAL POR TEMPO LIMITADO</div>
+    <h2>Aproveite Esta Promoção Relâmpago Agora!</h2>
     
     <div class="price-section">
-      <div class="old-price">Valor Regular: R$ 197,00</div>
+      <div class="old-price">De R$ 197,00</div>
       <div class="current-price">R$ 97,00</div>
-      <div class="price-info">Com desconto promocional especial</div>
+      <div class="price-info">+ Frete GRÁTIS para todo Brasil</div>
     </div>
 
     <div class="bonus-list">
-      <div class="bonus-item">Guia Completo de Bem-Estar Natural</div>
-      <div class="bonus-item">Acesso a Comunidade de Usuárias</div>
-      <div class="bonus-item">Materiais e Orientações Exclusivas</div>
-      <div class="bonus-item">Suporte ao Cliente Dedicado</div>
-      <div class="bonus-item">Entrega Discreta em Todo Brasil</div>
+      <div class="bonus-item">Fórmula 100% Natural e Aprovada ANVISA</div>
+      <div class="bonus-item">Entrega Rápida com Rastreamento</div>
+      <div class="bonus-item">Garantia de 30 Dias ou Seu Dinheiro de Volta</div>
+      <div class="bonus-item">Suporte ao Cliente Disponível</div>
+      <div class="bonus-item">Acesso Exclusivo a Dicas de Bem-Estar</div>
     </div>
 
-    <button class="cta-button" onclick="fbq('track', 'ViewContent'); window.location.href='https://pay.braip.co/ref?pl=pla38y41&ck=cheyn1wv&af=afio8e136n';">
-      🛒 ADQUIRIR AGORA COM DESCONTO
-    </button>
+    <a href="SEU_LINK_AFILIADO_AQUI?utm_source=presell&utm_medium=web&utm_campaign=amora-miura&utm_content=button" class="cta-button">
+      🛒 COMPRAR AGORA COM DESCONTO
+    </a>
+    
+    <p style="margin-top: 15px; font-size: 12px; opacity: 0.8;">
+      Pagamento 100% Seguro | Múltiplas Formas de Pagamento Disponíveis
+    </p>
   </div>
-</div>
-
-<!-- GARANTIA -->
-<div class="guarantee-section">
-  <h3>🛡️ Garantia de Satisfação</h3>
-  <p style="font-size: 15px; color: #666; margin: 15px 0;">
-    Estamos confiantes em nossa fórmula. Se não ficar satisfeita com sua compra, você pode solicitar informações sobre nossa política de satisfação.
-  </p>
-  <div class="guarantee-badge">POLÍTICA DE SATISFAÇÃO DO CLIENTE</div>
-</div>
-
-<!-- FAQ -->
-<div class="faq-section">
-  <h2>❓ Perguntas Frequentes</h2>
-  
-  <div class="faq-item">
-    <div class="faq-question">
-      ➜ Como usar o produto?
-    </div>
-    <div class="faq-answer">
-      Acompanha instruções completas de uso. Recomendamos seguir as orientações da embalagem. Em caso de dúvidas, procure um profissional de saúde.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-question">
-      ➜ O produto é seguro?
-    </div>
-    <div class="faq-answer">
-      Sim! É 100% natural e aprovado pela ANVISA. Não contém hormônios sintéticos. Porém, se tem alergias ou está em tratamento, consulte um médico.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-question">
-      ➜ Quanto tempo para chegar?
-    </div>
-    <div class="faq-answer">
-      Entregamos em todo Brasil em 2 a 7 dias úteis após confirmação do pagamento. Você receberá um código de rastreamento.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-question">
-      ➜ Quanto tempo dura cada embalagem?
-    </div>
-    <div class="faq-answer">
-      Um frasco com 60 cápsulas dura aproximadamente 30 dias com o uso conforme recomendado (2 cápsulas diárias).
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-question">
-      ➜ Tem restrições de uso?
-    </div>
-    <div class="faq-answer">
-      Como qualquer suplemento, recomendamos consultar um profissional de saúde, especialmente se está grávida, amamentando ou em tratamento médico.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-question">
-      ➜ Como fazer o pedido?
-    </div>
-    <div class="faq-answer">
-      Clique no botão "Adquirir Agora" abaixo. Você será direcionado para nossa plataforma segura de pagamento onde poderá concluir sua compra.
-    </div>
-  </div>
-</div>
-
-<!-- CTA FINAL -->
-<div style="background: white; margin: 15px 20px; padding: 25px; border-radius: 12px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-  <h2 style="color: #2d5f3f; font-size: 24px; font-weight: 700; margin-bottom: 15px;">
-    🌿 Comece Seu Bem-Estar Hoje
-  </h2>
-  <p style="font-size: 16px; color: #666; margin-bottom: 20px;">
-    Milhares de mulheres já estão cuidando de sua saúde com nosso produto.<br>
-    Não deixe de investir no seu bem-estar.
-  </p>
-  <button class="cta-button" onclick="fbq('track', 'InitiateCheckout'); window.location.href='https://pay.braip.co/ref?pl=pla38y41&ck=cheyn1wv&af=afio8e136n';">
-    ⭐ GARANTIR MINHA COMPRA AGORA
-  </button>
 </div>
 
 <!-- FOOTER -->
 <div class="footer">
   <p>
-    <strong>AVISO LEGAL:</strong> Este site possui caráter informativo e não substitui orientação profissional de saúde. Os resultados podem variar de pessoa para pessoa. Sempre consulte um profissional de saúde antes de iniciar qualquer suplementação. Este produto é um suplemento alimentar, não é medicamento.<br><br>
-    © 2024 Amora Miúra + Vit - Todos os direitos reservados<br>
-    <a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a> | <a href="#">Contato</a>
+    <strong>AVISO IMPORTANTE:</strong> Este site possui caráter informativo e educacional. Não substitui orientação médica profissional. Os resultados podem variar de pessoa para pessoa. Consulte seu médico antes de usar qualquer suplemento alimentar.
   </p>
-
-  <!-- DISCLAIMER META -->
-  <div class="footer-disclaimer">
-    <p>
-      Este site não é afiliado ao Facebook ou Meta Platforms, Inc.<br>
-      As informações apresentadas possuem caráter informativo.<br>
-      Os resultados podem variar de pessoa para pessoa.
-    </p>
-  </div>
+  <p style="margin-top: 15px;">
+    © 2024 Amora Miúra + Vit | Todos os direitos reservados<br>
+    CNPJ: [SEU_CNPJ] | Política de Privacidade | Termos de Uso
+  </p>
 </div>
 
-<!-- FLOATING CTA -->
-<div class="floating-cta">
-  <a href="https://pay.braip.co/ref?pl=pla38y41&ck=cheyn1wv&af=afio8e136n" onclick="fbq('track', 'Lead');">
-    🌸 CONHECER AGORA COM DESCONTO
+<!-- BOTÃO FLUTUANTE -->
+<div class="floating-button">
+  <a href="SEU_LINK_AFILIADO_AQUI?utm_source=presell&utm_medium=floating&utm_campaign=amora-miura&utm_content=floating_button">
+    🌸 APROVEITAR OFERTA AGORA
   </a>
 </div>
+
+<!-- SCRIPT DE SCROLL -->
+<script>
+function scrollToOffer() {
+  document.getElementById('offer').scrollIntoView({ behavior: 'smooth' });
+  fbq('track', 'ViewContent');
+}
+
+// Rastreamento de eventos
+document.querySelectorAll('.cta-button, .floating-button a').forEach(button => {
+  button.addEventListener('click', function() {
+    fbq('track', 'Lead');
+    fbq('track', 'InitiateCheckout');
+  });
+});
+
+// Rastreamento de scroll
+let viewed50 = false;
+window.addEventListener('scroll', function() {
+  let scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+  if (scrollPercent > 50 && !viewed50) {
+    viewed50 = true;
+    fbq('track', 'ViewContent', { value: 97, currency: 'BRL' });
+  }
+});
+</script>
 
 </body>
 </html>
